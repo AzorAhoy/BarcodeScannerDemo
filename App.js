@@ -63,7 +63,7 @@ class Scanner extends Component {
   render() {
     return (
       <ImageBackground source = {require('./images.jpg')} style = {{width: '100%', height: '100%'}} >
-        <OfflineNotice/>
+
         <Text style = {styles.jp}>バーコード読み取り</Text>
         <Text style = {styles.jp}>枠内にバーコードを差してください</Text>
         <RNCamera
@@ -99,6 +99,7 @@ class Scanner extends Component {
             <Text style = {styles.white}> Maps </Text>
           </TouchableOpacity>
         </View>
+        <OfflineNotice/>
       </ImageBackground>
     );
   }
